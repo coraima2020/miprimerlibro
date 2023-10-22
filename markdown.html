@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Markdown Files &#8212; My sample book</title>
+    <title>COMO FUNCIONA GIT &#8212; My sample book</title>
   
   
   
@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="EJEMPLO CON NOTBOOKS" href="notebooks.html" />
-    <link rel="prev" title="Aprendiendo Jupyter Book" href="intro.html" />
+    <link rel="prev" title="BIENVENIDOS A MI DOMINIO GIT" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -162,16 +162,14 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Aprendiendo Jupyter Book
+                    BIENVENIDOS A MI DOMINIO GIT
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Markdown Files</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">COMO FUNCIONA GIT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">EJEMPLO CON NOTBOOKS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">COMANDOS GIT BASICOS</a></li>
-
-
 </ul>
 
     </div>
@@ -355,7 +353,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Markdown Files</h1>
+    <h1>COMO FUNCIONA GIT</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -365,10 +363,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repositorio">Repositorio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#branch-ramificaciones">Branch (Ramificaciones)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-request-fusion">Pull Request _(Fusión)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tag">Tag</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fork">Fork</a></li>
 </ul>
             </nav>
         </div>
@@ -380,51 +379,33 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
-<h1>Markdown Files<a class="headerlink" href="#markdown-files" title="Permalink to this heading">#</a></h1>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.
-This is a simple file to help you get started and show off some syntax.</p>
-<section id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Permalink to this heading">#</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
-<p>For more about MyST, see <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST Markdown Overview</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="como-funciona-git">
+<h1>COMO FUNCIONA GIT<a class="headerlink" href="#como-funciona-git" title="Permalink to this heading">#</a></h1>
+<section id="repositorio">
+<h2>Repositorio<a class="headerlink" href="#repositorio" title="Permalink to this heading">#</a></h2>
+<p>Un repositorio es la ubicación o ruta en la que se almacena toda la información de un proyecto como imágenes, código, carpetas, documentos, etc.</p>
+<p>Cada proyecto contaría con su propio repositorio único, por lo que la ruta de acceso será exclusiva para el proyecto.</p>
 </section>
-<section id="sample-roles-and-directives">
-<h2>Sample Roles and Directives<a class="headerlink" href="#sample-roles-and-directives" title="Permalink to this heading">#</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<p>Here is a “note” directive:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
-</div>
-<p>It will be rendered in a special box when you build your book.</p>
-<p>Here is an inline directive to refer to a document: <a class="reference internal" href="markdown-notebooks.html"><span class="doc">COMANDOS GIT BASICOS</span></a>.</p>
+<section id="branch-ramificaciones">
+<h2>Branch (Ramificaciones)<a class="headerlink" href="#branch-ramificaciones" title="Permalink to this heading">#</a></h2>
+<p>En el caso de que queramos trabajar una parte concreta de nuestro proyecto de forma aislada no afectando al repositorio principal, tendremos que hacerlo mediante Branch.</p>
+<p>El Branch creará una copia exacta de nuestro proyecto para hacer pruebas sin miedo a equivocarnos y que afecte a todo el trabajo realizado.</p>
 </section>
-<section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<span class="target" id="id2"></span></section>
-<section id="learn-more">
-<h2>Learn more<a class="headerlink" href="#learn-more" title="Permalink to this heading">#</a></h2>
-<p>This is just a simple starter to get you started.
-You can learn a lot more at <a class="reference external" href="https://jupyterbook.org">jupyterbook.org</a>.</p>
+<section id="pull-request-fusion">
+<h2>Pull Request _(Fusión)<a class="headerlink" href="#pull-request-fusion" title="Permalink to this heading">#</a></h2>
+<p>Cada vez que subas un nuevo cambio en una rama del proyecto, puedes avisar a los demás colaboradores para que validen o no tu pull request, o si encuentran posibles mejoras poder comentarlas.</p>
+</section>
+<section id="tag">
+<h2>Tag<a class="headerlink" href="#tag" title="Permalink to this heading">#</a></h2>
+<p>Los Tag permiten controlar el estado de un repositorio dando información a otros usuarios de en qué versión se encuentra actualmente el proyecto.</p>
+<p>Esta acción es conocida como “Tagging” y es bastante importante a la hora de gestionar la vida de un proyecto.
+Crear un nuevo proyecto a partir de otro (Fork).</p>
+</section>
+<section id="fork">
+<h2>Fork<a class="headerlink" href="#fork" title="Permalink to this heading">#</a></h2>
+<p>Una opción bastante usada en Github es la de Fork. Con esta opción podrás crear un nuevo proyecto en base a uno ya creado, permitiendo hacer modificaciones y guardándose en tu propio repositorio y no en el repositorio original.</p>
+<p>Esta opción facilita el crecimiento de proyectos permitiendo a los desarrolladores continuar mejorando un software por cuenta propia y en el caso de realizarse una mejora en el repositorio principal podrás también implementarla a tu proyecto clonado.</p>
+<p>Esta opción es conocida en Github como bifurcación.</p>
 </section>
 </section>
 
@@ -464,7 +445,7 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Aprendiendo Jupyter Book</p>
+        <p class="prev-next-title">BIENVENIDOS A MI DOMINIO GIT</p>
       </div>
     </a>
     <a class="right-next"
@@ -491,10 +472,11 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repositorio">Repositorio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#branch-ramificaciones">Branch (Ramificaciones)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-request-fusion">Pull Request _(Fusión)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tag">Tag</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fork">Fork</a></li>
 </ul>
   </nav></div>
 
