@@ -35,12 +35,12 @@ A la inversa, ejecuta el siguiente comando básico para copiar un repositorio lo
 ```
 git clone /path/to/repository
 ```
-# git add 
+## git add 
 se usa para agregar archivos al área de preparación. Por ejemplo, el siguiente comando de Git básico indexará el archivo temp.txt:
 ```
 git add <temp.txt>
 ```
-# git commit 
+## git commit 
 creará una instantánea de los cambios y la guardará en el directorio git.
 ```
 git commit –m “El mensaje que acompaña al commit va aquí”

@@ -1,55 +1,34 @@
-# Markdown Files
 
-Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
-in regular markdown files (`.md`), you'll write in the same flavor of markdown
-called **MyST Markdown**.
-This is a simple file to help you get started and show off some syntax.
+# COMO FUNCIONA GIT
 
-## What is MyST?
+## Repositorio
 
-MyST stands for "Markedly Structured Text". It
-is a slight variation on a flavor of markdown called "CommonMark" markdown,
-with small syntax extensions to allow you to write **roles** and **directives**
-in the Sphinx ecosystem.
+Un repositorio es la ubicación o ruta en la que se almacena toda la información de un proyecto como imágenes, código, carpetas, documentos, etc.
 
-For more about MyST, see [the MyST Markdown Overview](https://jupyterbook.org/content/myst.html).
+Cada proyecto contaría con su propio repositorio único, por lo que la ruta de acceso será exclusiva para el proyecto.
 
-## Sample Roles and Directives
+## Branch (Ramificaciones)
 
-Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but **roles are written in one line**, whereas
-**directives span many lines**. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.
+En el caso de que queramos trabajar una parte concreta de nuestro proyecto de forma aislada no afectando al repositorio principal, tendremos que hacerlo mediante Branch.
 
-Here is a "note" directive:
+El Branch creará una copia exacta de nuestro proyecto para hacer pruebas sin miedo a equivocarnos y que afecte a todo el trabajo realizado.
 
-```{note}
-Here is a note
-```
+## Pull Request _(Fusión)
 
-It will be rendered in a special box when you build your book.
+Cada vez que subas un nuevo cambio en una rama del proyecto, puedes avisar a los demás colaboradores para que validen o no tu pull request, o si encuentran posibles mejoras poder comentarlas.
 
-Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
+## Tag
 
+Los Tag permiten controlar el estado de un repositorio dando información a otros usuarios de en qué versión se encuentra actualmente el proyecto.
 
-## Citations
+Esta acción es conocida como “Tagging” y es bastante importante a la hora de gestionar la vida de un proyecto.
+Crear un nuevo proyecto a partir de otro (Fork).
 
-You can also cite references that are stored in a `bibtex` file. For example,
-the following syntax: `` {cite}`holdgraf_evidence_2014` `` will render like
-this: {cite}`holdgraf_evidence_2014`.
+## Fork
 
-Moreover, you can insert a bibliography into your page with this syntax:
-The `{bibliography}` directive must be used for all the `{cite}` roles to
-render properly.
-For example, if the references for your book are stored in `references.bib`,
-then the bibliography is inserted with:
+Una opción bastante usada en Github es la de Fork. Con esta opción podrás crear un nuevo proyecto en base a uno ya creado, permitiendo hacer modificaciones y guardándose en tu propio repositorio y no en el repositorio original.
 
-```{bibliography}
-```
+Esta opción facilita el crecimiento de proyectos permitiendo a los desarrolladores continuar mejorando un software por cuenta propia y en el caso de realizarse una mejora en el repositorio principal podrás también implementarla a tu proyecto clonado.
 
-## Learn more
+Esta opción es conocida en Github como bifurcación.
 
-This is just a simple starter to get you started.
-You can learn a lot more at [jupyterbook.org](https://jupyterbook.org).
